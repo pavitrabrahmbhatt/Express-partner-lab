@@ -4,7 +4,6 @@ const methodOverride = require('method-override');
 
 const app = express();
 
-const robotController = require('./controllers/robots.js')
 
 
 
@@ -12,6 +11,7 @@ const robotController = require('./controllers/robots.js')
 app.use(bodyParser.urlencoded({extended:false}));
 app.use(methodOverride('_method'));
 
+const robotController = require('./controllers/robotController.js')
 app.use('/robots', robotController);
 
 

@@ -15,3 +15,5 @@ const robots = [
 		color: 'green'
 	}
 ]
+
+module.exports = robots

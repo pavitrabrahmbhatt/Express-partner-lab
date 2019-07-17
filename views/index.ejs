@@ -2,8 +2,14 @@
 <html>
 <head>
 	<title>Robots</title>
+	
 </head>
 <body>
-
+	<h1>Robots</h1>
+	<ul>
+		<% for(let i = 0; i < robotsObject.length; i++) {%>
+			<li><%=robotsObject[i].name%></li>
+		<%}%>
+	</ul>
 </body>
 </html>
