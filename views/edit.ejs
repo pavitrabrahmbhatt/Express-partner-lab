@@ -6,6 +6,16 @@
 </head>
 <body>
 	<h1>One Robot</h1>
+
+	<form action="/robots/<%=id%>?_method=PUT" method="POST">  
+		Name: <input type="text" name="name" value='<%=robotsObject.name%>'/> <br>
+		Size: <input type="number" name="size" value="<%=robotsObject.size%>"/> <br>
+		Color: <input type="text" name="color" value="<%=robotsObject.color%>"> <br>
+
+		<input type="submit" name="" value="Submit Changes"/>
+	</form>
+
+
 	<h2><%=robotsObject.name%></h2>
 </body>
 </html>
