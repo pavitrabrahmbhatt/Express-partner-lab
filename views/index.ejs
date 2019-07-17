@@ -12,7 +12,7 @@
 		<% for(let i = 0; i < robotsObject.length; i++) {%>
 
 			<li>
-				<%=robotsObject[i].name%>
+				<a href=<%=`robots/${i}`%>><%=robotsObject[i].name%></a>
 			</li>
 			<li>
 				<%=robotsObject[i].size%>

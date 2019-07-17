@@ -4,6 +4,14 @@ const router = express.Router();
 const Robots = require("../models/robots.js")
 
 
+
+router.get('/:id', (req,res) => {
+	res.render('show.ejs', {
+		robotsObject: Robots[req.params.id]
+	});
+})
+
+
 router.get('/', (req,res) => {
 	res.render('index.ejs', {
 		robotsObject: Robots
