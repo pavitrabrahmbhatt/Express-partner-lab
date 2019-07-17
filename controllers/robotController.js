@@ -18,6 +18,12 @@ router.get('/:id/edit', (req,res) => {
 	});
 })
 
+router.put('/:id', (req,res) => {
+	console.log(req.body, "in put route");
+	Robots[req.params.id] = req.body
+	res.redirect('/robots')
+})
+
 
 router.delete('/:id', (req,res) => {
 	console.log("delete route");
