@@ -13,10 +13,22 @@
 
 			<li>
 				<%=robotsObject[i].name%>
-				<form action="/robots/<%=i%>?_method=DELETE" method="POST"> 
-					<input type="submit" value="Delete"/>
-				</form>
 			</li>
+			<li>
+				<%=robotsObject[i].size%>
+			</li>
+			<li>
+				<%=robotsObject[i].color%>
+			</li>
+				<br>
+
+			<form action="/robots/<%=i%>?_method=DELETE" method="POST"> 
+				<input type="submit" value="Delete"/>
+			</form>
+
+
+			<button> <a href="<%=`/robots/${i}/edit`%>">Edit</button></a>
+			
 
 		<%}%>
 	</ul>
