@@ -12,7 +12,7 @@
 		<% for(let i = 0; i < robotsObject.length; i++) {%>
 
 			<li>
-				<a href=<%=`robots/${i}`%>><%=robotsObject[i].name%></a>
+				<a href=<%=`${i}`%>><%=robotsObject[i].name%></a>
 			</li>
 			<li>
 				<%=robotsObject[i].size%>
@@ -21,14 +21,6 @@
 				<%=robotsObject[i].color%>
 			</li>
 				<br>
-
-			<form action="/robots/<%=i%>?_method=DELETE" method="POST"> 
-				<input type="submit" value="Delete"/>
-			</form>
-
-
-			<button> <a href="<%=`/robots/${i}/edit`%>">Edit</button></a>
-			
 
 		<%}%>
 	</ul>

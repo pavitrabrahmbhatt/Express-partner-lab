@@ -14,7 +14,9 @@
 
 		<input type="submit" name="" value="Submit Changes"/>
 	</form>
-
+	<form action="/robots/<%=id%>?_method=DELETE" method="POST"> 
+				<input type="submit" value="Delete"/>
+			</form>
 
 	<h2><%=robotsObject.name%></h2>
 </body>
